@@ -1,0 +1,32 @@
+constructor	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/demo1.js	/^  constructor(props) {$/;"	function	line:12
+render	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/demo1.js	/^  render() {$/;"	function	line:16
+movie	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/demo1.js	/^    var movie = MOCKED_MOVIES_DATA[0];$/;"	variable	line:20
+constructor	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/moviedetail.js	/^  constructor(props) {$/;"	function	line:12
+render	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/moviedetail.js	/^  render() {$/;"	function	line:16
+icons.search	/Users/yangfeiloveG/Documents/reactNativeInAction/app/icons/icons.js	/^var icons = {$/;"	property	line:2
+constructor	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchfrom.js	/^  constructor(props) {$/;"	function	line:17
+render	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchfrom.js	/^  render() {$/;"	function	line:21
+constructor	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform_wrap.js	/^  constructor(props) {$/;"	function	line:12
+render	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform_wrap.js	/^  render() {$/;"	function	line:16
+constructor	/Users/yangfeiloveG/Documents/reactNativeInAction/index.ios.js	/^  constructor(props){$/;"	function	line:24
+state.selectedTab	/Users/yangfeiloveG/Documents/reactNativeInAction/index.ios.js	/^    this.state = {$/;"	property	line:26
+render	/Users/yangfeiloveG/Documents/reactNativeInAction/index.ios.js	/^  render() {$/;"	function	line:30
+constructor	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchresult.js	/^  constructor(props) {$/;"	function	line:18
+state.movies	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchresult.js	/^    this.state = {$/;"	property	line:25
+renderMovieList	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchresult.js	/^  renderMovieList(movie){$/;"	function	line:30
+render	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchresult.js	/^  render() {$/;"	function	line:60
+styles	/Users/yangfeiloveG/Documents/reactNativeInAction/app/styles/main.js	/^var styles = StyleSheet.create({$/;"	variable	line:9
+constructor	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/listview.js	/^  constructor(props) {$/;"	function	line:19
+state.dataSource	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/listview.js	/^    this.state = {$/;"	property	line:21
+componentDidMount	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/listview.js	/^  componentDidMount(){$/;"	function	line:29
+fetchData	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/listview.js	/^  fetchData() {$/;"	function	line:33
+renderMovie	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/listview.js	/^  renderMovie(movie) {$/;"	function	line:46
+render	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/listview.js	/^  render() {$/;"	function	line:76
+constructor	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform.js	/^  constructor(props) {$/;"	function	line:17
+state.query	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform.js	/^    this.state = {$/;"	property	line:24
+state.opacity	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform.js	/^      query: '',$/;"	property	line:25
+state.loaded	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform.js	/^      opacity: 0,$/;"	property	line:26
+state.searchHistory	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform.js	/^      loaded: true,$/;"	property	line:27
+fetchData	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform.js	/^  fetchData(){$/;"	function	line:32
+renderSearchHistoryList	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform.js	/^  renderSearchHistoryList(item){$/;"	function	line:57
+render	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform.js	/^  render() {$/;"	function	line:63

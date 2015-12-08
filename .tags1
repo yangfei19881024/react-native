@@ -1,0 +1,14 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+constructor	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform.js	/^  constructor(props) {$/;"	function	line:17
+state.query	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform.js	/^    this.state = {$/;"	property	line:24
+state.opacity	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform.js	/^      query: '',$/;"	property	line:25
+state.loaded	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform.js	/^      opacity: 0,$/;"	property	line:26
+state.searchHistory	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform.js	/^      loaded: true,$/;"	property	line:27
+fetchData	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform.js	/^  fetchData(){$/;"	function	line:32
+renderSearchHistoryList	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform.js	/^  renderSearchHistoryList(item){$/;"	function	line:57
+render	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform.js	/^  render() {$/;"	function	line:63
