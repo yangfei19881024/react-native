@@ -4,53 +4,63 @@ import React from 'react-native';
 import styles from "../styles/main";
 
 let {
-  Modal,
-  StyleSheet,
-  SwitchIOS,
   Text,
-  TouchableHighlight,
   View,
+  Image,
+  DatePickerIOS,
+  SwitchIOS,
 } = React;
-
-exports.displayName = (undefined: ?string);
-exports.framework = 'React';
-exports.title = '<Modal>';
-exports.description = 'Component for presenting modal views.';
 
 class Movie extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
-      active: false,
+      trueSwitchIsOn: true,
+      falseSwitchIsOn: false,
+      date: new Date(),
+      timeZoneOffsetInHours: (-1) * (new Date()).getTimezoneOffset() / 60,
     }
-
   }
 
-  _onHighlight() {
-    this.setState({active: true});
-  },
-
-  _onUnhighlight() {
-    this.setState({active: false});
-  },
+  onDateChange(date) {
+    this.setState({date: date});
+  }
 
   render() {
-    var colorStyle = {
-      color: this.state.active ? '#fff' : '#000',
-    };
+    const MOCKED_MOVIES_DATA = [
+      {title: 'Title', year: '2015', posters: {thumbnail: 'http://i.imgur.com/UePbdph.jpg'}},
+    ];
+    var movie = MOCKED_MOVIES_DATA[0];
     return (
-      <TouchableHighlight
-        onHideUnderlay={this._onUnhighlight}
-        onPress={this.props.onPress}
-        onShowUnderlay={this._onHighlight}
-        style={[styles.button, this.props.style]}
-        underlayColor="#a9d9d4">
-          <Text style={[styles.buttonText, colorStyle]}>{this.props.children}</Text>
-      </TouchableHighlight>
+      <View>
+        <View style={[styles.container,{paddingTop:100}]}>
+          <Text>{movie.title}</Text>
+          <Text>{movie.year}</Text>
+          <Image style={styles.postImage} source={{uri: movie.posters.thumbnail}} />
+        </View>
+
+        <View>
+          <SwitchIOS
+            onValueChange={(value) => this.setState({falseSwitchIsOn: value})}
+            style={{marginBottom: 10}}
+            value={this.state.falseSwitchIsOn} />
+          <SwitchIOS
+            onValueChange={(value) => this.setState({trueSwitchIsOn: value})}
+            value={this.state.trueSwitchIsOn} />
+        </View>
+
+        <Text>{this.state.falseSwitchIsOn ? "On" : "Off"}</Text>
+
+        <DatePickerIOS
+          date={this.state.date}
+          mode="time"
+          timeZoneOffsetInMinutes={this.state.timeZoneOffsetInHours * 60}
+          onDateChange={this.onDateChange.bind(this)}
+        />
+      <Text>{this.state.data}</Text>
+      </View>
     );
   }
-
 }
 
 export { Movie as default };

@@ -35,7 +35,7 @@ class reactNativeInAction extends React.Component{
           selected={this.state.selectedTab === 'favorites'}
           onPress={() => {
             this.setState({
-              selectedTab: 'favorites'
+              selectedTab: 'mostviewed'
             })
           }}
         >

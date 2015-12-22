@@ -4,11 +4,9 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-constructor	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform.js	/^  constructor(props) {$/;"	function	line:17
-state.query	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform.js	/^    this.state = {$/;"	property	line:24
-state.opacity	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform.js	/^      query: '',$/;"	property	line:25
-state.loaded	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform.js	/^      opacity: 0,$/;"	property	line:26
-state.searchHistory	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform.js	/^      loaded: true,$/;"	property	line:27
-fetchData	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform.js	/^  fetchData(){$/;"	function	line:32
-renderSearchHistoryList	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform.js	/^  renderSearchHistoryList(item){$/;"	function	line:57
-render	/Users/yangfeiloveG/Documents/reactNativeInAction/app/components/searchform.js	/^  render() {$/;"	function	line:63
+constructor	/Users/yangfeiloveG/Documents/reactNativeInAction/index.ios.js	/^    constructor(props) {$/;"	function	line:12
+class.Component.state.isModalOpen	/Users/yangfeiloveG/Documents/reactNativeInAction/index.ios.js	/^      this.state = {$/;"	property	line:14
+openModal	/Users/yangfeiloveG/Documents/reactNativeInAction/index.ios.js	/^    openModal() {$/;"	function	line:18
+closeModal	/Users/yangfeiloveG/Documents/reactNativeInAction/index.ios.js	/^    closeModal() {$/;"	function	line:21
+render	/Users/yangfeiloveG/Documents/reactNativeInAction/index.ios.js	/^    render() {$/;"	function	line:24
+styles	/Users/yangfeiloveG/Documents/reactNativeInAction/index.ios.js	/^var styles = StyleSheet.create({$/;"	variable	line:37
