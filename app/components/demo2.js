@@ -241,7 +241,7 @@ var styles = StyleSheet.create({
   		borderColor:'#FC9720',
   	},
   	sbu_flex:{
-  		flex:1,
+      flex:1
   	},
   	sbu_borderRight:{
   		borderColor:'#fff',
