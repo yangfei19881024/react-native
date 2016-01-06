@@ -1,54 +1,69 @@
 'use strict';
 
 import React from 'react-native';
-import styles from "../styles/main";
+import styles from "../styles/part1";
 
 let {
-  Modal,
-  StyleSheet,
-  SwitchIOS,
-  Text,
-  TouchableHighlight,
-  View,
+    AppRegistry,
+    StyleSheet,
+    Text,
+    View,
+    Image,
 } = React;
-
-exports.displayName = (undefined: ?string);
-exports.framework = 'React';
-exports.title = '<Modal>';
-exports.description = 'Component for presenting modal views.';
 
 class Movie extends React.Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      active: false,
-    }
-
   }
 
-  _onHighlight() {
-    this.setState({active: true});
-  },
-
-  _onUnhighlight() {
-    this.setState({active: false});
-  },
-
   render() {
-    var colorStyle = {
-      color: this.state.active ? '#fff' : '#000',
-    };
+
     return (
-      <TouchableHighlight
-        onHideUnderlay={this._onUnhighlight}
-        onPress={this.props.onPress}
-        onShowUnderlay={this._onHighlight}
-        style={[styles.button, this.props.style]}
-        underlayColor="#a9d9d4">
-          <Text style={[styles.buttonText, colorStyle]}>{this.props.children}</Text>
-      </TouchableHighlight>
+      <View style={{backgroundColor:'#f2f2f2'}}>
+        <View style={styles.advbar}>
+          <View>
+              <Image style={{height:70}} source={{uri:'http://image5.suning.cn/uimg/cms/img/145204436136976844.jpg'}}></Image>
+          </View>
+        </View>
+        <View style={{flexDirection:'row',height:130.5}}>
+          <View style={{flex:1,height:130.5,paddingRight:0.5}}>
+            <Image style={{height:130.5}} source={{uri:'http://image5.suning.cn/uimg/cms/img/145206520290466188.jpg'}}></Image>
+          </View>
+          <View style={{flex:1,height:130,flexDirection:'column'}}>
+            <View style={{flex:1,borderBottomWidth:0.5,borderColor:'#FFF'}}>
+              <Image style={{flex:1}} source={{uri:'http://image1.suning.cn/uimg/cms/img/145205338596625443.jpg'}}></Image>
+            </View>
+            <View style={{flex:1}}>
+              <Image style={{flex:1}} source={{uri:'http://image4.suning.cn/uimg/cms/img/145187606321158035.jpg'}}></Image>
+            </View>
+          </View>
+        </View>
+
+        <View style={styles.advbar}>
+          <View>
+            <Image style={{height:33}} source={{uri:'http://image3.suning.cn/uimg/cms/img/144887015916878841.jpg'}}></Image>
+          </View>
+          <View style={{flexDirection:'row',height:192,paddingTop:1}}>
+            <View style={{flex:1,height:192,paddingRight:1}}>
+              <Image style={{height:192}} source={{uri:'http://image2.suning.cn/uimg/cms/img/145198355002415472.jpg'}}></Image>
+            </View>
+            <View style={{flex:1,height:192,flexDirection:'column'}}>
+              <View style={{flex:1,paddingBottom:1}}>
+                <Image style={{flex:1}} source={{uri:'http://image3.suning.cn/uimg/cms/img/145197791204841782.jpg'}}></Image>
+              </View>
+              <View style={{flex:1,paddingBottom:1}}>
+                <Image style={{flex:1}} source={{uri:'http://image5.suning.cn/uimg/cms/img/145198909252748276.jpg'}}></Image>
+              </View>
+              <View style={{flex:1,paddingBottom:1}}>
+                <Image style={{flex:1}} source={{uri:'http://image3.suning.cn/uimg/cms/img/145192200362478286.jpg'}}></Image>
+              </View>
+            </View>
+          </View>
+        </View>
+
+      </View>
     );
+
   }
 
 }

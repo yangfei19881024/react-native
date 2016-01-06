@@ -27,7 +27,7 @@ class MovieWrap extends React.Component {
         tintColor="rgba(255, 255, 255, 0.8)"
         translucent={true}
       />
-    );
+    )
   }
 }
 
