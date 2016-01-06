@@ -50,7 +50,8 @@ var Slider = React.createClass({
           showsButtons={true}
           autoplay={true}
           height={80}
-          showsPagination={true}>
+          showsPagination={true}
+          >
 	        <Image style={[styles.slide,]} source={{uri: sliderImgs[0]}}></Image>
 	        <Image style={[styles.slide,]} source={{uri: sliderImgs[1]}}></Image>
 	        <Image style={[styles.slide,]} source={{uri: sliderImgs[2]}}></Image>
