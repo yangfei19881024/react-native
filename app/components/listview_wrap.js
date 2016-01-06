@@ -3,6 +3,8 @@
 import React from 'react-native';
 import styles from "../styles/main";
 import MovieList from "./listview";
+import MovieDetail from "./moviedetail.js";
+import icons from "../icons/icons";
 
 let {
   NavigatorIOS,
@@ -13,13 +15,24 @@ class MovieListWrap extends React.Component {
     super(props);
   }
 
+  onRightButtonPress(){
+    this.refs.nav.push({
+      'title': '电影详情',
+      'component': MovieDetail,
+    });
+  }
   render() {
     return (
       <NavigatorIOS
+        ref="nav"
         style={styles.container}
         initialRoute={{
-          title: '最爱电影列表',
-          component: MovieList
+          title: '',
+          backButtonTitle: "111",
+          component: MovieList,
+          backButtonIcon: {uri:icons.search},
+          rightButtonTitle: 'More!',
+          onRightButtonPress: this.onRightButtonPress.bind(this)
         }}
         shadowHidden={true}
         barTintColor="darkslateblue"
