@@ -10,7 +10,6 @@ let {
 var styles = StyleSheet.create({
     row:{
         flexDirection: 'row',
-        marginTop:60
     },
     marTop18:{
         marginTop:18,
@@ -60,10 +59,10 @@ var styles = StyleSheet.create({
       padding:5,
     },
   	wrapper: {
-      height:150
+      height:80
   	},
   	slide: {
-    	height:150,
+    	height:80,
     	resizeMode: Image.resizeMode.cover,
   	}
 });

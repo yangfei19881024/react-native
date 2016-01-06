@@ -2,7 +2,7 @@
 
 import React from 'react-native';
 import styles from "../styles/main";
-import Movie from "./demo1";
+import Index from "./demo2";
 
 let {
   NavigatorIOS,
@@ -19,7 +19,7 @@ class MovieWrap extends React.Component {
         style={styles.container}
         initialRoute={{
           title: '我的电影列表',
-          component: Movie
+          component: Index
         }}
         shadowHidden={true}
         barTintColor="darkslateblue"

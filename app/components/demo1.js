@@ -10,6 +10,7 @@ let {
     Text,
     View,
     Image,
+    ScrollView,
 } = React;
 
 class Movie extends React.Component {
@@ -20,6 +21,7 @@ class Movie extends React.Component {
   render() {
 
     return (
+      <ScrollView>
       <View style={{backgroundColor:'#f2f2f2'}}>
         <View style={styles.advbar}>
           <View>
@@ -63,6 +65,7 @@ class Movie extends React.Component {
         </View>
         <Slider />
       </View>
+    </ScrollView>
     );
 
   }

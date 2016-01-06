@@ -22,10 +22,22 @@ var sliderImgs = [
   'http://image2.suning.cn/uimg/cms/img/145198665549681212.jpg'
 ];
 
+// var Slider = React.createClass({
+//   	render: function(){
+// 	    return (
+// 	      <Swiper style={styles.wrapper} showsButtons={false}  height={150} autoplay={true} showsPagination={true} horizontal={true}>
+// 	        <Image style={[styles.slide,]} source={{uri: sliderImgs[0]}}></Image>
+// 	        <Image style={[styles.slide,]} source={{uri: sliderImgs[1]}}></Image>
+// 	        <Image style={[styles.slide,]} source={{uri: sliderImgs[2]}}></Image>
+// 	      </Swiper>
+// 	    );
+//   	}
+// });
+
 var Slider = React.createClass({
   	render: function(){
 	    return (
-	      <Swiper style={styles.wrapper} showsButtons={false} autoplay={true}>
+	      <Swiper style={styles.wrapper} showsButtons={false} autoplay={true} height={150} showsPagination={false}>
 	        <Image style={[styles.slide,]} source={{uri: sliderImgs[0]}}></Image>
 	        <Image style={[styles.slide,]} source={{uri: sliderImgs[1]}}></Image>
 	        <Image style={[styles.slide,]} source={{uri: sliderImgs[2]}}></Image>
