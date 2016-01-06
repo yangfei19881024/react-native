@@ -3,7 +3,8 @@
 import React from "react-native";
 
 let {
-  StyleSheet
+  StyleSheet,
+  Image
 } = React;
 
 var styles = StyleSheet.create({
@@ -57,7 +58,14 @@ var styles = StyleSheet.create({
     },
     advbar:{
       padding:5,
-    }
+    },
+  	wrapper: {
+      height:150
+  	},
+  	slide: {
+    	height:150,
+    	resizeMode: Image.resizeMode.cover,
+  	}
 });
 
 export default styles;

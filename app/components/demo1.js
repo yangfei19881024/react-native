@@ -2,6 +2,7 @@
 
 import React from 'react-native';
 import styles from "../styles/part1";
+import Slider from "./Slider";
 
 let {
     AppRegistry,
@@ -60,7 +61,7 @@ class Movie extends React.Component {
             </View>
           </View>
         </View>
-
+        <Slider />
       </View>
     );
 
