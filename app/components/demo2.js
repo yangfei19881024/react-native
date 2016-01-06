@@ -43,7 +43,14 @@ var sliderImgs = [
 var Slider = React.createClass({
   	render: function(){
 	    return (
-	      <Swiper style={styles.wrapper} paginationStyle={{position:'absolute',bottom:0}} showsButtons={true} autoplay={true} height={80} showsPagination={true}>
+	      <Swiper
+          style={styles.wrapper}
+          paginationStyle={{position:'absolute',bottom:0}}
+          activeDot={<View style={{backgroundColor:'red', width: 8, height: 8,borderRadius: 4,marginLeft: 3, marginRight: 3, marginTop: 3, marginBottom: 3}} />}
+          showsButtons={true}
+          autoplay={true}
+          height={80}
+          showsPagination={true}>
 	        <Image style={[styles.slide,]} source={{uri: sliderImgs[0]}}></Image>
 	        <Image style={[styles.slide,]} source={{uri: sliderImgs[1]}}></Image>
 	        <Image style={[styles.slide,]} source={{uri: sliderImgs[2]}}></Image>
